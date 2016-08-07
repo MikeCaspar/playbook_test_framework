@@ -1,20 +1,22 @@
-testForTimezone
+playbook_test_framework
 =============================
 
-testForTimezone (experimental role)
+playbook_test_framework (experimental)
 
 
-[![Build Status](https://travis-ci.org/MikeCaspar/testForTimezone.svg?branch=master)](https://travis-ci.org/MikeCaspar/testForTimezone)
+[![Build Status](https://travis-ci.org/MikeCaspar/playbook_test_framework.svg?branch=master)](https://travis-ci.org/MikeCaspar/playbook_test_framework)
 
 **this role is not ready.. do not use !**
-
 
 This role is intended to be used with the maintain_ / test_ loop presented at AnsibleFest 2016 in SFO
 
 - *test roles are intended to run in read only (to confirm a negative or positive test state)*
 
-- *Should you try this role on another platform, please either do a Pull Request for the new platform or feel free to email me to ask that it be added.*
+This role is a role used to automatically download all testing roles used in the framework.
 
+You have the option to specific individual test roles or to simply use this to download them all
+
+- *Should you try this role on another platform, please either do a Pull Request for the new platform or feel free to email me to ask that it be added.*
 
 The original slides for the test/maintain loop can be read about [here](http://www.slideshare.net/MikeCaspar/testing-for-infrastructure-as-code-for-ansiblefest-2016-64540514).
 
@@ -34,26 +36,19 @@ Working ansible installation 1.9 or above
 Role Variables
 --------------
 
-* timezoneCity (string) - Mandatory
-* debug: (true/false) - Optionally shows debug of vars as it proceeds (defaults to **false**) 
-
+none
 
 Dependencies
 ------------
 
-no dependencies
+MikeCaspar.testForFolder
+MikeCaspar.testForTimezone
 
-Example Playbook
-----------------
+To load the framework
+---------------------
 
-test/confirm that "America/Toronto" is set as the current Timezone City
-
-    # playbook:  application1_proxy_test.yml
-    
-    - hosts: servers
-      roles:
-         - { role: MikeCaspar.testForTimezone, timezoneCity:"America/Toronto" }
-     
+    ansible-galaxy install -r requirements.yml
+ 
 ## License
 
 MIT
