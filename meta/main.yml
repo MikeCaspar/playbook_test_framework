@@ -1,0 +1,33 @@
+galaxy_info:
+  author: MikeCaspar
+  description: TDD/BDD style testing for Ansible .. folder tests (experimental)
+  company: Caspar Computer Services Inc.
+  
+  # If the issue tracker for your role is not on github, uncomment the
+  # next line and provide a value
+  # issue_tracker_url: http://example.com/issue/tracker
+  
+  license: "license (BSD, MIT)"
+  min_ansible_version: 1.9
+
+  platforms:
+    - name: Ubuntu
+      versions:
+      - xenial
+      - trusty
+
+  galaxy_tags:
+    - test
+    - folder
+    - test
+    - maintain
+    - TDD
+    - BDD
+    - govern
+    - governance
+
+dependencies:
+
+    - MikeCaspar.testForFolder
+    - MikeCaspar.testForTimezone
+
