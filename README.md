@@ -75,7 +75,8 @@ Design guidelines
 
 if it is not provided. Setting to true will enable debug.
  
-- A fail-fast approach to testing is applied. Therefore, upon the first error or failed test, the test will fail.
+- A fail-fast approach was initially used. This did not work well for parallel creation of tests (or creation of tests in advance.
+- To simulate other testing frameworks, all failed tests will appear via messages as "TEST FAILED:" or "TEST PASSED:" followed by some text.
 
 # The test/maintain loop
 
