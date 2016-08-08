@@ -41,6 +41,8 @@ none
 Dependencies
 ------------
 
+(auto-loaded via requirements.yml)
+
 MikeCaspar.testForFolder
 MikeCaspar.testForTimezone
 
