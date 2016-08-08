@@ -5,6 +5,8 @@ playbook_test_framework (experimental)
 
 **this role is not ready.. do not use !**
 
+Wiki and documentation available at [https://github.com/MikeCaspar/playbook_test_framework/wiki](https://github.com/MikeCaspar/playbook_test_framework/wiki) 
+
 This role is intended to be used with the maintain_ / test_ loop presented at AnsibleFest 2016 in SFO
 
 - *test roles are intended to run in read only (to confirm a negative or positive test state)*
@@ -52,6 +54,35 @@ This will download a boostrap or startup dependency list that will automatically
 Once installed, to download all the testing roles, execute the following command:
 
     ansible-galaxy install -r requirements.yml
+ 
+ 
+
+quick notes if you are into trying things out already
+-----------------------------------------------------
+
+- You may use this as an auto-loader for all sub-roles for testing or you can load each role as needed individually.
+- This galaxy test role auto-loader will be controlled as to which versions of sub-modules get loaded. Do what works best for you.
+
+- if you want to add a role, feel free to reach out to me for help until I work out some documentation for how to do this effectively.
+- Please list mandatory fields for each role.
+
+Design guidelines
+-----------------
+
+- test roles are intended to be part of the _test cycle.
+- **roles should make no changes to system settings and should be read-only**
+- each role will have default parameter of 
+    
+    debug: false
+
+if it is not provided. Setting to true will enable debug.
+ 
+- A fail-fast approach to testing is applied. Therefore, upon the first error or failed test, the test will fail.
+
+# The test/maintain loop
+
+![https://raw.githubusercontent.com/wiki/MikeCaspar/playbook_test_framework/images/TestMaintainLoop.png](https://raw.githubusercontent.com/wiki/MikeCaspar/playbook_test_framework/images/TestMaintainLoop.png)
+  
  
 ## License
 
