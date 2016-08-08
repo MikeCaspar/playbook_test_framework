@@ -40,8 +40,8 @@ Dependencies
 
 (auto-loaded via requirements.yml)
 
-MikeCaspar.testForFolder
-MikeCaspar.testForTimezone
+- MikeCaspar.testForFolder
+- MikeCaspar.testForTimezone
 
 To load the framework
 ---------------------
