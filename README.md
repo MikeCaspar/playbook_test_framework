@@ -3,9 +3,6 @@ playbook_test_framework
 
 playbook_test_framework (experimental)
 
-
-[![Build Status](https://travis-ci.org/MikeCaspar/playbook_test_framework.svg?branch=master)](https://travis-ci.org/MikeCaspar/playbook_test_framework)
-
 **this role is not ready.. do not use !**
 
 This role is intended to be used with the maintain_ / test_ loop presented at AnsibleFest 2016 in SFO
