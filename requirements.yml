@@ -2,4 +2,4 @@
 
 - src: MikeCaspar.testForFolder
 - src: MikeCaspar.testForTimezone
-
+- src: MikeCaspar.testForGroup
