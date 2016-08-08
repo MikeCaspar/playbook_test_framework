@@ -3,8 +3,6 @@ playbook_test_framework
 
 playbook_test_framework (experimental)
 
-**this role is not ready.. do not use !**
-
 Wiki and documentation available at [https://github.com/MikeCaspar/playbook_test_framework/wiki](https://github.com/MikeCaspar/playbook_test_framework/wiki) 
 
 This role is intended to be used with the maintain_ / test_ loop presented at AnsibleFest 2016 in SFO
