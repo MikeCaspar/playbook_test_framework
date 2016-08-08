@@ -47,6 +47,11 @@ MikeCaspar.testForTimezone
 To load the framework
 ---------------------
 
+    ansible-galaxy install MikeCaspar.playbook_test_framework
+
+This will download a boostrap or startup dependency list that will automatically load all sub-testing dependency roles from galaxy.
+Once installed, to download all the testing roles, execute the following command:
+
     ansible-galaxy install -r requirements.yml
  
 ## License
