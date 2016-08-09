@@ -1,6 +1,6 @@
 galaxy_info:
   author: MikeCaspar
-  description: TDD/BDD style testing for Ansible .. folder tests (experimental)
+  description: TDD/BDD/ATDD style testing for Ansible ->  _test/_maintain/_test loop
   company: Caspar Computer Services Inc.
   
   # If the issue tracker for your role is not on github, uncomment the
