@@ -1,0 +1,15 @@
+---
+  # playbook:  application1_proxy_test.yml
+
+    - hosts: servers
+
+      roles:
+
+         - { role: MikeCaspar.testForFolder, path:"/etc" , expected: present}
+         - { role: MikeCaspar.testForFolder, path:"/badfolder" , expected: absent}
+
+         - { role: MikeCaspar.testForTimezone, timezoneCity:"America/Toronto" }
+
+         - { role: MikeCaspar.testForGroup, name: "docker" }
+         - { role: MikeCaspar.testForGroup, name: "specialgroup" , expected: absent }
+

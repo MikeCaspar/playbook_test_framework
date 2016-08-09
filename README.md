@@ -55,6 +55,20 @@ Once installed, to download all the testing roles, execute the following command
     ansible-galaxy install -r requirements.yml
  
  
+A sample _test playbook ( _note that different test roles are used_ ) 
+
+    # playbook:  application1_proxy_test.yml
+    
+    - hosts: servers
+      roles:
+         - { role: MikeCaspar.testForFolder, path:"/etc" , expected: present}
+         - { role: MikeCaspar.testForFolder, path:"/badfolder" , expected: absent}
+         
+         - { role: MikeCaspar.testForTimezone, timezoneCity:"America/Toronto" }
+         
+         - { role: MikeCaspar.testForGroup, name: "docker" }
+         - { role: MikeCaspar.testForGroup, name: "specialgroup" , expected: absent }
+         
 
 quick notes if you are into trying things out already
 -----------------------------------------------------
