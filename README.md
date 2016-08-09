@@ -55,7 +55,7 @@ Once installed, to download all the testing roles, execute the following command
     ansible-galaxy install -r requirements.yml
  
  
-A sample _test playbook ( _note that different test roles are used_ ) 
+A sample _test playbook ( **note that different test roles are used** ) 
 
     # playbook:  application1_proxy_test.yml
     
