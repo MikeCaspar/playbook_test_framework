@@ -79,7 +79,6 @@ quick notes if you are into trying things out already
 - if you want to add a role, feel free to reach out to me for help until I work out some documentation for how to do this effectively.
 - Please list mandatory fields for each role.
 
-~[https://github.com/MikeCaspar/playbook_test_framework/blob/master/README.md](https://github.com/MikeCaspar/playbook_test_framework/blob/master/README.md)
 Design guidelines
 -----------------
 
