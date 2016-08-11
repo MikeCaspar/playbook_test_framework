@@ -34,5 +34,5 @@ dependencies:
     - MikeCaspar.testForFolder
     - MikeCaspar.testForTimezone
     - MikeCaspar.testForGroup
-    - MikeCaspar.testCommandResponse
+    - MikeCaspar.testForCommandResponse
 
