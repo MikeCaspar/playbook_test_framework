@@ -12,6 +12,10 @@ echo Failing Tests....
 
 grep TEST_FAILED log.txt
 
+echo Serious Failures...
+
+grep fatal log.txt
+
 
 
 
