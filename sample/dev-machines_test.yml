@@ -1,0 +1,14 @@
+---
+# This playbook tests dev machines
+
+
+- name: test dev machines
+  hosts: dev-machines
+  remote_user: root
+
+  roles:
+    - { role: MikeCaspar.testForFolder, path: "/etc", expected: present }
+    - { role: MikeCaspar.testForTimezone, timezoneCity: "America/Toronto", debug: false }
+    - { role: MikeCaspar.testForCommandResponse, command: "nano --version", expected: "GNU nano", debug: false }
+
+
