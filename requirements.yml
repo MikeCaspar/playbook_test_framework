@@ -3,3 +3,5 @@
 - src: MikeCaspar.testForFolder
 - src: MikeCaspar.testForTimezone
 - src: MikeCaspar.testForGroup
+- src: MikeCaspar.testForCommandResponse
+
