@@ -13,3 +13,5 @@
          - { role: MikeCaspar.testForGroup, name: "docker" }
          - { role: MikeCaspar.testForGroup, name: "specialgroup" , expected: absent }
 
+         - { role: MikeCaspar.testCommandResponse: command: "cat /etc/hosts", expected: "localhost" }
+
