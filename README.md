@@ -43,6 +43,7 @@ Dependencies
 - MikeCaspar.testForFolder
 - MikeCaspar.testForTimezone
 - MikeCaspar.testForGroup
+- MikeCaspar.testCommandResponse
 
 To load the framework
 ---------------------
