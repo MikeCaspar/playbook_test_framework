@@ -72,7 +72,7 @@ A sample _test playbook ( **note that different test roles are used** )
          
          - { role: MikeCaspar.testCommandResponse, command: "cat /etc/hosts", expected: "localhost" }
          
-         - { role: MikeCaspar.testForPackage, name: "pythonjs" , expected: present }
+         - { role: MikeCaspar.testForPackage, name: "pythomjs" , expected: present }
 
 quick notes if you are into trying things out already
 -----------------------------------------------------
