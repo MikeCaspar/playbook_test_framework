@@ -35,4 +35,5 @@ dependencies:
     - MikeCaspar.testForTimezone
     - MikeCaspar.testForGroup
     - MikeCaspar.testForCommandResponse
+    - MikeCaspar.testForPackage
 
